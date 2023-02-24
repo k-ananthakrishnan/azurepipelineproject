@@ -45,7 +45,7 @@ public class DemoControllerTest {
     @Test
     public void api5Test() throws Exception{
         this.mockMvc.perform(get("/api5")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string("i am a failed test"));
+                .andExpect(content().string("API5 doing API things"));
     }
 
 
